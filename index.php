@@ -66,7 +66,7 @@
 
 				if (input === "login") {
 					output.innerHTML += "<p>Login successful.</p>";
-					window.location.href = "./openai.php";
+					window.location.href = "./main";
 				} 
                 if (input == "help"){
                     output.innerHTML += "<p>Avaliable commands:</p><p>help  -  This command.</p><p>login  -  Login to the site."
