@@ -64,14 +64,14 @@
 				let input = cmd.value.trim().toLowerCase();
 				cmd.value = "";
 
-				if (input === "login") {
+				elif (input === "login") {
 					output.innerHTML += "<p>Login successful.</p>";
 					window.location.href = "./main";
 				} 
-                if (input == "help"){
+                elif (input == "help"){
                     output.innerHTML += "<p>Avaliable commands:</p><p>help  -  This command.</p><p>login  -  Login to the site.</p><p>ls  -  Lists all the files in a directory</p>"
                 }
-				if (input == "ls"){
+				elif (input == "ls"){
 					output.innerHTML += "<p>Listing Files...</p><p>|</p><p>|-index.html</p><p>|-main</p>"
 				}else {
 					output.innerHTML += "<p>" + input + ": command not found. Try 'help'.</p>";
