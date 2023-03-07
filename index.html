@@ -63,9 +63,11 @@
 				let output = document.getElementById('output');
 				let input = cmd.value.trim().toLowerCase();
 				cmd.value = "";
+				
+				output.innerHTML += "<p>>>>  "+ input +"</p>"
 
 				if (input === "login") {
-					output.innerHTML += "<p>>>>  "+ input +"</p><p>Login successful.</p>";
+					output.innerHTML += "<p>Login successful.</p>";
 					window.location.href = "./main";
 				} 
                 else if (input == "help"){
